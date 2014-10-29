@@ -1,6 +1,6 @@
-app.controller('mainCtrl', ['$scope', 'PositionFactory', 'constants', function ($scope, PositionFactory, constants) {
+app.controller('mainCtrl', ['$scope', 'UserFactory', 'constants', function ($scope, UserFactory, constants) {
     
-    PositionFactory.getAll().then(function(res){
+    UserFactory.getAll().then(function(res){
         
         $scope.users = [];
         res.data.results.forEach(function(item){
@@ -12,7 +12,7 @@ app.controller('mainCtrl', ['$scope', 'PositionFactory', 'constants', function (
     })
 }]);
 
-app.service('PositionFactory', ['$http', 'constants', function ($http, constants) {
+app.service('UserFactory', ['$http', 'constants', function ($http, constants) {
     return {
         getAll: function () {
             return $http.get(constants.contestUrl);

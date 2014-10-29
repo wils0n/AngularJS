@@ -13,11 +13,10 @@
 	</div>
 	<script type="text/javascript" src="{{ STATIC_URL }}bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ STATIC_URL }}bower_components/angular/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.2.24/angular-animate.min.js"></script>
 	<script type="text/javascript">
-		var app = angular.module('myApp', ['ngAnimate']).
-		config(function($interpolateProvider){
-		  $interpolateProvider.startSymbol('[[').endSymbol(']]');
+		var app = angular.module('myApp', []).
+			config(function($interpolateProvider){
+		  	$interpolateProvider.startSymbol('[[').endSymbol(']]');
 		});
 
 		app.constant('constants', {
