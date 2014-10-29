@@ -16,7 +16,7 @@ Al usar $interpolateProvider, se puede configurar(personalizar) para que los sí
 
 	y ya se podría usar en django algo como:
 
-	```
+	```js
 	<ul ng-repeat="item in items">
 		<li>[[ item ]]</li>
 	</ul>
