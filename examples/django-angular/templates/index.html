@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="mainCtrl">
+			<ul ng-repeat="user in users">
+				<li>[[ user.username ]]</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="{{ STATIC_URL }}bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}bower_components/angular/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.24/angular-animate.min.js"></script>
+	<script type="text/javascript">
+		var app = angular.module('myApp', ['ngAnimate']).
+		config(function($interpolateProvider){
+		  $interpolateProvider.startSymbol('[[').endSymbol(']]');
+		});
+
+		app.constant('constants', {
+		  contestUrl: '/users/',
+		});
+	</script>
+
+	<script type="text/javascript" src="{{STATIC_URL}}js/app.js"></script>
+</body>
+</html>
