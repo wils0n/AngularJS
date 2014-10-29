@@ -62,4 +62,50 @@
 	- Cada vez que se crea un nuevo controlador, Angular crea un nuevo objeto $scope
 
 
-##Recursos
+###¿Como podemos interactuar con APIs de backend con Angular?
+>##Promesas
+>>Ayudan a trabajar con código asincrónico sintienod que estamos escibiendo código síncrónico.
+>>>####¿Cómo accedemos al objeto $http en el controlador?
+
+```
+angular.module('myApp', [])
+.controller('HomeController', function($scope, $http) { //Angular inyectará las dependencias $scope, $http
+  // Tenemos el objeto $scope y el objeto $http
+  // disponibles en este punto
+});
+```
+##Inyección de dependencias
+Cuando usamos otros lenguajes y necesimos usar dependencias usamos `import` o `
+require`
+
+En Angular se hace de la siguiente forma:
+```
+.controller('HomeController', function($scope, $q) {
+```
+or
+```
+.controller('HomeController', function($q, $scope) {
+```
+El orden no importa
+
+
+##Servicios.
+Cuando usamos $http, estamos usando un servicio de Angular, los servicios son objeros single que realizan tareas comunes.
+
+###Ejemplo.
+Vamos a crear una aplicacion que nos informe del clime. Podemos desarrollar nuestro `WeatherService` que contenga las taras comunes para usar en cualquier lugar de neustra aplicación.
+
+
+angular.module('myApp.services', [])
+.service('WeatherService',
+  function($http) {
+    this.weatherFor = function(zip) {
+    // hacer algo con $http para obtener el clima aquí
+    };
+  });
+
+
+angular.module('myApp.controllers')
+.controller('WeatherController', function($scope, WeatherService) {
+  $scope.weather = WeatherService.weatherFor(90210);
+});
