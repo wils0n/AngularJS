@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="menus">
+        <li ng-repeat="platillo in platillos | orderBy:orderProp">
+          <a href="#/platillos/{{platillo.id}}" class="thumb"><img ng-src="{{platillo.imageUrl}}" /></a>
+          <a href="#/platillos/{{platillo.id}}">{{platillo.name}}</a>
+          <p>{{platillo.description}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

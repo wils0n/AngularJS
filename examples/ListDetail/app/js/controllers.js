@@ -2,12 +2,18 @@
 
 /* Controllers */
 
-var myApp = angular.module('myApp', []);
+var menuControllers = angular.module('menuControllers', []);
 
-myApp.controller('MenuListCtrl', ['$scope', '$http', function($scope, $http) {
-  console.log("ingers");
-  $http.get('platillos/platillos.json').success(function(data) {
-    $scope.platillos = data;
-  });
-  $scope.orderProp = 'id';
-}]);
+menuControllers.controller('MenuListCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $http.get('platillos/platillos.json').success(function(data) {
+      $scope.platillos = data;
+    });
+
+    $scope.orderProp = 'id';
+  }]);
+
+menuControllers.controller('MenuDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.platilloId = $routeParams.platilloId;
+  }]);
