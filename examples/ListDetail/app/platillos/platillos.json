@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "slug": "arroz-con-pollo",
         "imageUrl": "img/arrozconpollo-s.jpg",
         "name": "Arroz con Pollo",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "slug": "canelones-a-la-florentina",
         "imageUrl": "img/canelonesalaflorentina-s.jpg",
         "name": "Canelones a la Florentina",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -15,6 +17,7 @@
     },
     {
         "id": 3,
+        "slug": "lasagna-de-carne",
         "imageUrl": "img/lasagnadecarne-s.jpg",
         "name": "Lasagna de Carne",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -22,6 +25,7 @@
     },
     {
         "id": 4,
+        "slug": "lomo-saltado",
         "imageUrl": "img/lomosaltado-s.jpg",
         "name": "Lomo Saltado",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -29,6 +33,7 @@
     },
     {
         "id": 5,
+        "slug": "ravioles-de-seco",
         "imageUrl": "img/raviolesdeseco-s.jpg",
         "name": "Raviles de Seco",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -36,6 +41,7 @@
     },
     {
         "id": 6,
+        "slug": "risoto-al-ragu",
         "imageUrl": "img/risotoalragu-s.jpg",
         "name": "Risoto al Ragu",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",
@@ -43,6 +49,7 @@
     },
     {
         "id": 7,
+        "slug": "aji-de-gallina",
         "imageUrl": "img/ajidegallina-s.jpg",
         "name": "Aji de Gallina",
         "description": "Tierna pechuga de pollo (o suave pierna con encuentro) y su generosa porcion de arroz, todo cocido a la perfeccion en un intenso caldo al culantro aromatizado con ajies y pimenton. Servido con salsa criolla. Buenisimo!!",

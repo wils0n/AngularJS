@@ -13,7 +13,10 @@ menuControllers.controller('MenuListCtrl', ['$scope', '$http',
     $scope.orderProp = 'id';
   }]);
 
-menuControllers.controller('MenuDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.platilloId = $routeParams.platilloId;
+menuControllers.controller('MenuDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    console.log($routeParams.platilloSlug);
+    $http.get('platillos/' + $routeParams.platilloSlug + '.json').success(function(data) {
+      $scope.platillo = data;
+    });
   }]);

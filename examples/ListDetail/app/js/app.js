@@ -12,7 +12,7 @@ myApp.config(['$routeProvider',
         templateUrl: 'partials/menu-list.html',
         controller: 'MenuListCtrl'
       }).
-      when('/platillos/:platilloId', {
+      when('/platillos/:platilloSlug', {
         templateUrl: 'partials/menu-detail.html',
         controller: 'MenuDetailCtrl'
       }).

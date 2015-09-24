@@ -10,8 +10,8 @@
 
       <ul class="menus">
         <li ng-repeat="platillo in platillos | orderBy:orderProp">
-          <a href="#/platillos/{{platillo.id}}" class="thumb"><img ng-src="{{platillo.imageUrl}}" /></a>
-          <a href="#/platillos/{{platillo.id}}">{{platillo.name}}</a>
+          <a href="#/platillos/{{platillo.slug}}" class="thumb"><img ng-src="{{platillo.imageUrl}}" /></a>
+          <a href="#/platillos/{{platillo.slug}}">{{platillo.name}}</a>
           <p>{{platillo.description}}</p>
         </li>
       </ul>
