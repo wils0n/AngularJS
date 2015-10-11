@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app="myApp">
+  <form name="myForm" ng-controller="ExampleController">
+    <label>Value1:
+      <input type="checkbox" ng-model="value1">
+    </label><br/>
+    <label>Value2:
+      <input type="checkbox" ng-model="value+1"
+             ng-true-value="'YES'" ng-false-value="'NO'">
+     </label><br/>
+    <tt>value1 = {{value1}}</tt><br/>
+    <tt>value2 = {{value2}}</tt><br/>
+   </form>
+
+   <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+   <script>
+   var app = angular.module('myApp', []);
+   app.controller('ExampleController', ['$scope', function($scope) {
+       $scope.value1=true;
+     }]);
+ </script>
+  </body>
+</html>
